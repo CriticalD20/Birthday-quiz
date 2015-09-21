@@ -42,15 +42,15 @@ if birthmonth == "September":
        
         
     else:
-        print(""+name+", why couldn't it be your birthday!?!?")
+        print(""+name+", you are a fall baby of the stone age")
 elif birthmonth=="October":
     birthyear=float(input("And what year were you born in, "+name+"? "))
     birthday=float(input("And the day? "))
     if birthday==int(31):
         print("You were born on Halloween!")
     else: 
-        print(""+name+", why couldn't it be your birthday!?!?")
+        print(""+name+", you are a fall baby of the stone age.")
 else:
     birthyear=input("And what year were you born in, "+name+"? ")
     birthday=input("And the day? ")
-    print(""+name+", why couldn't it be your birthday!?!?")
+    print(""+name+", you are a fall baby of the stone age.")
