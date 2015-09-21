@@ -35,7 +35,6 @@ name=input("Hello, what is your name? ")
 
 birthmonth=input("Hello, "+name+", what was the name of the month you were born in? ")
 if birthmonth == "September":
-    print("And what year were you born in? ")
     birthyear=float(input("And what year were you born in, "+name+"? "))
     birthday=float(input("And the day? "))
     if birthday==int(21):
