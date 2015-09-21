@@ -33,7 +33,7 @@ Example Session
 """
 name=input("Hello, what is your name? ")
 
-birthmonth=input("Hello, "+name+", what was the name of the month you were born in? ")
+birthmonth=input("Hi, "+name+", what was the name of the month you were born in? ")
 if birthmonth == "September":
     birthyear=float(input("And what year were you born in, "+name+"? "))
     birthday=float(input("And the day? "))
