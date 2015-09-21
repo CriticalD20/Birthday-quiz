@@ -39,7 +39,7 @@ if birthmonth == "September":
     birthyear=float(input("And what year were you born in, "+name+"? "))
     birthday=float(input("And the day? "))
     if birthday==int(21):
-        print("Happy Birthday "+name+"!")
+        print("Happy Birthday!")
        
         
     else:
