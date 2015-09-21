@@ -1,7 +1,7 @@
 """
 birthday.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: James Napier
+Credit:
 Assignment:
 
 Your program will ask the user the following questions, in this order:
@@ -31,3 +31,20 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+name=input("Hello, what is your name? ")
+
+birthmonth=input("Hello, "+name+", what was the name of the month you were born in? ")
+if birthmonth == "September":
+    print("And what year were you born in? ")
+    birthyear=float(input("What year were you born in? "))
+    birthday=float(input("And the day?"))
+    if birthday==int(21):
+        print("Happy Birthday "+name+"!")
+       
+        
+    else:
+        print(""+name+", why couldn't it be your birthday!?!?")
+else:
+    birthyear=input("What year were you born in? ")
+    birthday=input("And the day?")
+    print(""+name+", why couldn't it be your birthday!?!?")
