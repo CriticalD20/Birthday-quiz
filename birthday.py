@@ -36,15 +36,22 @@ name=input("Hello, what is your name? ")
 birthmonth=input("Hello, "+name+", what was the name of the month you were born in? ")
 if birthmonth == "September":
     print("And what year were you born in? ")
-    birthyear=float(input("What year were you born in? "))
-    birthday=float(input("And the day?"))
+    birthyear=float(input("And what year were you born in, "+name+"? "))
+    birthday=float(input("And the day? "))
     if birthday==int(21):
         print("Happy Birthday "+name+"!")
        
         
     else:
         print(""+name+", why couldn't it be your birthday!?!?")
+elif birthmonth=="October":
+    birthyear=float(input("And what year were you born in, "+name+"? "))
+    birthday=float(input("And the day? "))
+    if birthday==int(31):
+        print("You were born on Halloween!")
+    else: 
+        print(""+name+", why couldn't it be your birthday!?!?")
 else:
-    birthyear=input("What year were you born in? ")
-    birthday=input("And the day?")
+    birthyear=input("And what year were you born in, "+name+"? ")
+    birthday=input("And the day? ")
     print(""+name+", why couldn't it be your birthday!?!?")
