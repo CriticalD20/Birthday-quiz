@@ -42,7 +42,8 @@ name=input("Hello, what is your name? ")
 birthmonth=input("Hi "+name+", what was the name of the month you were born in? ")
 month = month_name[todaymonth]
 if birthmonth == month:
-    
+#I NEED TO FIX THE FREAKING YEAR PARTS!!! AGGGGGHHHHH
+
     birthyear=float(input("And what year were you born in, "+name+"? "))
     birthday=float(input("And the day? "))
     if birthday==int(todaydate):
@@ -51,20 +52,40 @@ if birthmonth == month:
     elif birthday==int(31):
         print("You were born on Halloween!")
     else:
-        if birthmonth=="September" or birthmonth=="October" or birthmonth=="November":
-            print(""+name+", you are a fall baby of the stone age.")
-        elif birthmonth=="December" or birthmonth=="January" or birthmonth=="February":
-            print(""+name+", you are a winter baby of the stone age.")
-        elif birthmonth=="March" or birthmonth=="April" or birthmonth=="May":
-            print(""+name+", you are a spring baby of the stone age.")
-        elif birthmonth=="June" or birthmonth=="July" or birthmonth=="August":
-            print(""+name+", you are a summer baby of the stone age.")
+        if birthyear<2000:
+            if birthmonth=="September" or birthmonth=="October" or birthmonth=="November":
+                print(""+name+", you are a fall baby of the stone age.")
+            elif birthmonth=="December" or birthmonth=="January" or birthmonth=="February":
+                print(""+name+", you are a winter baby of the stone age.")
+            elif birthmonth=="March" or birthmonth=="April" or birthmonth=="May":
+                print(""+name+", you are a spring baby of the stone age.")
+            elif birthmonth=="June" or birthmonth=="July" or birthmonth=="August":
+                print(""+name+", you are a summer baby of the stone age.")
+        else:
+            if birthmonth=="September" or birthmonth=="October" or birthmonth=="November":
+                print(""+name+", you are a fall baby of the two thousands.")
+            elif birthmonth=="December" or birthmonth=="January" or birthmonth=="February":
+                print(""+name+", you are a winter baby of the two thousands.")
+            elif birthmonth=="March" or birthmonth=="April" or birthmonth=="May":
+                print(""+name+", you are a spring baby of the two thousands.")
+            else:
+                print(""+name+", you are a summer baby of the two thousands.")
 elif birthmonth=="October":
     birthyear=float(input("And what year were you born in, "+name+"? "))
-    birthday=float(input("And the day? "))
-    if birthday==int(31):
-        print("You were born on Halloween!")
-    else: 
+    if birthyear >=2000:
+        birthday=float(input("And the day? "))
+        if birthday==int(31):
+            print("You were born on Halloween!")
+        else: 
+            if birthmonth=="September" or birthmonth=="October" or birthmonth=="November":
+                print(""+name+", you are a fall baby of the two thousands.")
+            elif birthmonth=="December" or birthmonth=="January" or birthmonth=="February":
+                print(""+name+", you are a winter baby of the two thousands.")
+            elif birthmonth=="March" or birthmonth=="April" or birthmonth=="May":
+                print(""+name+", you are a spring baby of the two thousands.")
+            else:
+                print(""+name+", you are a summer baby of the two thousands.")
+    elif birthyear<2000:
         if birthmonth=="September" or birthmonth=="October" or birthmonth=="November":
             print(""+name+", you are a fall baby of the stone age.")
         elif birthmonth=="December" or birthmonth=="January" or birthmonth=="February":
@@ -75,13 +96,29 @@ elif birthmonth=="October":
             print(""+name+", you are a summer baby of the stone age.")
 else:
     birthyear=input("And what year were you born in, "+name+"? ")
-    birthday=input("And the day? ")
-    if birthmonth=="September" or birthmonth=="October" or birthmonth=="November":
-        print(""+name+", you are a fall baby of the stone age.")
-    elif birthmonth=="December" or birthmonth=="January" or birthmonth=="February":
-        print(""+name+", you are a winter baby of the stone age.")
-    elif birthmonth=="March" or birthmonth=="April" or birthmonth=="May":
-        print(""+name+", you are a spring baby of the stone age.")
+    if birthyear>=2000:
+        birthday=input("And the day? ")
+        if birthmonth=="September" or birthmonth=="October" or birthmonth=="November":
+            birthday=input("And the day? ")
+            print(""+name+", you are a fall baby of the two thousands.")
+            
+        elif birthmonth=="December" or birthmonth=="January" or birthmonth=="February":
+            birthday=input("And the day? ")
+            print(""+name+", you are a winter baby of the two thousands.")
+        elif birthmonth=="March" or birthmonth=="April" or birthmonth=="May":
+            birthday=input("And the day? ")
+            print(""+name+", you are a spring baby of the two thousands.")
+        else:
+            birthday=input("And the day? ")
+            print(""+name+", you are a summer baby of the two thousands.")
+            
     else:
-        print(""+name+", you are a summer baby of the stone age.")
+        if birthmonth=="September" or birthmonth=="October" or birthmonth=="November":
+            print(""+name+", you are a fall baby of the stone age.")
+        elif birthmonth=="December" or birthmonth=="January" or birthmonth=="February":
+            print(""+name+", you are a winter baby of the stone age.")
+        elif birthmonth=="March" or birthmonth=="April" or birthmonth=="May":
+            print(""+name+", you are a spring baby of the stone age.")
+        else:
+            print(""+name+", you are a summer baby of the stone age.")
       
