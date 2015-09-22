@@ -46,7 +46,7 @@ if birthmonth == month:
     birthyear=float(input("And what year were you born in, "+name+"? "))
     birthday=float(input("And the day? "))
     if birthday==int(todaydate):
-        print("Happy Birthday!")
+        print("Happy birthday!")
        
     elif birthday==int(31):
         print("You were born on Halloween!")
