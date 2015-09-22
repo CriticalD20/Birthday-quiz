@@ -31,13 +31,21 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+from datetime import datetime
+from calendar import month_name
+todaymonth = datetime.today().month
+todaydate = datetime.today().day
+
+
 name=input("Hello, what is your name? ")
 
 birthmonth=input("Hi "+name+", what was the name of the month you were born in? ")
-if birthmonth == "September":
+month = month_name[todaymonth]
+if birthmonth == month:
+    
     birthyear=float(input("And what year were you born in, "+name+"? "))
     birthday=float(input("And the day? "))
-    if birthday==int(21):
+    if birthday==int(todaydate):
         print("Happy Birthday!")
        
         
